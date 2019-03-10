@@ -1,209 +1,112 @@
 
-<!DOCTYPE HTML>
-<!--
-	Prototype by Pixelarity
-	pixelarity.com | hello@pixelarity.com
-	License: pixelarity.com/license
--->
-<html>
-	<head>
-		<title>Tiny Financial</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="static/assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="static/assets/css/main.css" />
-		<link rel="icon" type="image/png" sizes="96x96" href="static/favicon-96x96.png">
-		<!--[if lte IE 9]><link rel="stylesheet" href="static/assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="static/assets/css/ie8.css" /><![endif]-->
-	</head>
-	<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact V14</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
 
-		<!-- Header -->
-			<header id="header" class="alt">
-				<h1><a href="{{ url_for('index') }}">Tiny</a></h1>
-				<a href="#menu">Menu</a>
-			</header>
 
-		<!-- Menu -->
-			<nav id="menu">
-				<ul class="links">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Terms of Service</a></li>
-					<li><a href="#one">About</a></li>
-				</ul>
-				<ul class="actions vertical">
-					<li><a href="{{ url_for('register') }}" class="button special fit">Sign Up</a></li>
-					<li><a href="{{ url_for('login') }}" class="button fit">Log In</a></li>
-				</ul>
-			</nav>
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form">
+				<span class="contact100-form-title">
+					Contact Us
+				</span>
 
-		<!-- Banner -->
-			<section id="banner">
-				<div class="inner">
-					<div class="content">
-						<h2>Tiny Financial</h2>
-						<p>Tiny Steps To Your Financial Freedom</p>
-				<!--	</div>-->
-				<!--	<ul class="actions vertical">-->
-				<!--		<li><a href="{{ url_for('login') }}" class="button special major">Log In</a></li>-->
-				<!--		<li><a href="{{ url_for('register') }}" class="button major">Sign Up</a></li>-->
-				<!--	</ul>-->
-				<!--</div>-->
-			</section>
-
-		<!-- Four -->
-			<section id="four" class="wrapper style2 special">
-				<div class="inner">
-					<header>
-						<h2>Welcome to Micro-Investing</h2>
-						<p>Save Your Daily Spare Change From Your Daily Purchases<br />
-						and Build Your Wealth With These Micro Savings.</p>
-					</header>
-					<ul class="actions">
-						<li><a href="{{ url_for('register') }}" class="button special major">Start Investing Now</a></li>
-					</ul>
+				<label class="label-input100" for="first-name">Your Name *</label>
+				<div class="wrap-input100 rs1 validate-input">
+					<input id="first-name" class="input100" type="text" name="first-name" placeholder="First name">
+					<span class="focus-input100"></span>
 				</div>
-			</section>
-
-
-		<!-- Two -->
-			<section id="two" class="wrapper style2">
-				<div class="inner">
-					<header class="major">
-						<h2>"An Extra Dollar Saved Has an Infinite Percent of Return" </h2>
-						<p>~Anonymous~</p>
-
-					</header>
-					<div class="features">
-						<section>
-							<span class="icon major fas fa-mobile"></span>
-							<h2>Step 1:</h2>
-							<h3>Sign Up to Our Service</h3>
-							<p>Join the Tiny Cult!! and Start Your Micro Save Journey.</p>
-						</section>
-						<section>
-							<span class="icon major fas fa-shopping-cart"></span>
-							<h2>Step 2:</h2>
-							<h3>Shop Shop Shop...</h3>
-							<p>Make your daily spending on our selected merchants.</p>
-						</section>
-						<section>
-							<span class="icon major fas fa-credit-card"></span>
-							<h2>Step 3:</h2>
-							<h3>Pay Pay Pay...</h3>
-							<p>Make your payment with cash.</p>
-						</section>
-						<section>
-							<span class="icon major fas fa-qrcode"></span>
-							<h2>Step 4:</h2>
-							<h3>Keep The Change</h3>
-							<p>Use your QR code to allow merchants to scan and save your spare change to accumulate your micro wealths.</p>
-						</section>
-						<section>
-							<span class="icon major fab fa-tumblr-square"></span>
-							<h2>Step 5:</h2>
-							<h3>Watch It Grow</h3>
-							<p>Keep more change and observe your micro wealth grows!</p>
-						</section>
-						<section>
-							<span class="icon major fas fa-users "></span>
-							<h2>Step 6:</h2>
-							<h3>Join The Cult</h3>
-							<p>Invite your peers and start your micro wealths accumulating journey together!</p>
-						</section>
-				<!--	</div>-->
-				<!--	<footer class="major">-->
-				<!--		<ul class="actions">-->
-				<!--			<li><a href="#" class="button major">More Features</a></li>-->
-				<!--		</ul>-->
-				<!--	</footer>-->
-				<!--</div>-->
-			</section>
-
-		<!-- Three -->
-		<!--	<section id="three" class="wrapper style1">-->
-		<!--		<div class="inner">-->
-		<!--			<div class="spotlights">-->
-		<!--				<section>-->
-		<!--					<span class="image"><img src="static/images/pic05.jpg" alt="" /></span>-->
-		<!--					<div class="content">-->
-		<!--						<h2>Convallis integer iaculis</h2>-->
-		<!--						<p>Donec elementum odio ut suscipit congue. Fusce magna mattis vel fermentum, ultricies et velit. Suspendisse viverra, ante in eleifend vulputate, lacus lorem pretium ligula, tincidunt posuere sapien neque a augue. Pellentesque habitant morbi tristique senectus et netus et malesuada.</p>-->
-		<!--					</div>-->
-		<!--				</section>-->
-		<!--				<section>-->
-		<!--					<span class="image"><img src="images/pic06.jpg" alt="" /></span>-->
-		<!--					<div class="content">-->
-		<!--						<h2>Ultrices augue faucibus</h2>-->
-		<!--						<p>Donec elementum odio ut suscipit congue. Fusce magna mattis vel fermentum, ultricies et velit. Suspendisse viverra, ante in eleifend vulputate, lacus lorem pretium ligula, tincidunt posuere sapien neque a augue. Pellentesque habitant morbi tristique senectus et netus et malesuada.</p>-->
-		<!--					</div>-->
-		<!--				</section>-->
-		<!--				<section>-->
-		<!--					<span class="image"><img src="static/images/pic07.jpg" alt="" /></span>-->
-		<!--					<div class="content">-->
-		<!--						<h2>Integer sed sodales</h2>-->
-		<!--						<p>Donec elementum odio ut suscipit congue. Fusce magna mattis vel fermentum, ultricies et velit. Suspendisse viverra, ante in eleifend vulputate, lacus lorem pretium ligula, tincidunt posuere sapien neque a augue. Pellentesque habitant morbi tristique senectus et netus et malesuada.</p>-->
-		<!--					</div>-->
-		<!--				</section>-->
-		<!--			</div>-->
-		<!--		</div>-->
-		<!--	</section>-->
-
-    	<!-- One -->
-			<section id="one" class="wrapper style1 split">
-				<div class="inner">
-					<div class="content">
-						<h2>About</h2>
-						<p>We are a group of students from Lingnan Univeristy who have the vision of using technology to increase the standard of finance through affordable and creative ways.</p>
-					</div>
-				<!--	<div class="image-circles">-->
-				<!--		<div class="images">-->
-				<!--			<span class="image"><img src="static/images/pic01.jpg" alt="" /></span>-->
-				<!--			<span class="image"><img src="static/images/pic02.jpg" alt="" /></span>-->
-				<!--		</div>-->
-				<!--		<div class="images">-->
-				<!--			<span class="image"><img src="static/images/pic03.jpg" alt="" /></span>-->
-				<!--			<span class="image"><img src="static/images/pic04.jpg" alt="" /></span>-->
-				<!--		</div>-->
-				<!--	</div>-->
-				<!--</div>-->
-			</section>
-
-
-
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						<!--<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>-->
-						<li><a href="https://www.facebook.com/Tinyfinco-193406648078121/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<!--<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>-->
-						<!--<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>-->
-						<!--<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>-->
-						<li><a href="mailto:cgoh@ln.hk?Subject=Tinyfin Enquires" class="icon fa-envelope"><span class="label">Envelope</span></a></li>
-					</ul>
-					<ul class="contact">
-						<li>Goh Chen Yik & Tong Hai Bin</li>
-						<li>+852 62243819</li>
-						<li>+852 52229011</li>
-					</ul>
-					<ul class="links">
-						<li><a href="#">FAQ</a></li>
-						<li><a href="#">Support</a></li>
-						<li><a href="#">Terms</a></li>
-						<!--<li><a href="#">Contact</a></li>-->
-					</ul>
-					<p class="copyright">&copy; All rights reserved. Tiny Financial</p>
+				<div class="wrap-input100 rs1 validate-input">
+					<input class="input100" type="text" name="last-name" placeholder="Last name">
+					<span class="focus-input100"></span>
 				</div>
-			</footer>
 
-		<!-- Scripts -->
-			<script src="static/assets/js/jquery.min.js"></script>
-			<script src="static/assets/js/jquery.scrollex.min.js"></script>
-			<script src="static/assets/js/skel.min.js"></script>
-			<script src="static/assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="static/assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="static/assets/js/main.js"></script>
+				<label class="label-input100" for="email">Email Address *</label>
+				<div class="wrap-input100 validate-input">
+					<input id="email" class="input100" type="text" name="email" placeholder="Eg. example@email.com">
+					<span class="focus-input100"></span>
+				</div>
 
-	</body>
+				<label class="label-input100" for="phone">Phone Number</label>
+				<div class="wrap-input100">
+					<input id="phone" class="input100" type="text" name="phone" placeholder="Eg. +1 800 000000">
+					<span class="focus-input100"></span>
+				</div>
+
+				<label class="label-input100" for="message">Message *</label>
+				<div class="wrap-input100 validate-input">
+					<textarea id="message" class="input100" name="message" placeholder="Please enter your comments..."></textarea>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn">
+						<span>
+							Submit
+							<i class="zmdi zmdi-arrow-right m-l-8"></i>
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+</body>
 </html>
