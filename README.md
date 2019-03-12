@@ -6,6 +6,7 @@ You can find the code and address of the SF store/ EF Locker via following links
 1) http://www.sf-express.com/hk/en/other_services/sf_station/sf_station_network/
 2) http://www.sf-express.com/hk/en/dynamic_function/S.F.Network/EF-Locker/index.html
 - Js validation, Choice drop down menu.
+- Change background color to greenery style
 
 REFERENCE
 1) https://blog.usejournal.com/how-to-use-google-sheets-as-a-cms-or-a-database-f9d8e736fdce
