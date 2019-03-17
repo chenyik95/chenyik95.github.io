@@ -31,14 +31,14 @@
 <body>
 	<div class="container-contact100">
 		<div class="wrap-contact100">
-			<form class="contact100-form validate-form">
+			<form class="contact100-form validate-form" action="https://docs.google.com/forms/d/e/1FAIpQLSeK_ZcmCmSyynamf6Sh-FqcW6b_68eOJAgKLsVVyVpXCp1D3A/formResponse" target="_self" method="POST">
 				<span class="contact100-form-title">
 					Homesicklah
 				</span>
 
 				<label class="label-input100" for="first-name">Your Name *</label>
 				<div class="wrap-input100 rs1 validate-input">
-					<input id="first-name" class="input100" type="text" name="first-name" placeholder="First name">
+					<input id="first-name" class="input100" type="text" name="entry.2096682162" placeholder="First name">
 					<span class="focus-input100"></span>
 				</div>
 				<div class="wrap-input100 rs1 validate-input">
@@ -72,10 +72,7 @@
 
 				<div class="container-contact100-form-btn">
 					<button class="contact100-form-btn">
-						<span>
-							Submit
-							<i class="zmdi zmdi-arrow-right m-l-8"></i>
-						</span>
+						<input class="zmdi zmdi-arrow-right m-l-8" type= "submit" value= "Submit">
 					</button>
 				</div>
 			</form>
@@ -110,21 +107,6 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-23581568-13');
-</script>
-
-<script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
-<script type='text/javascript'>    
-  var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1q79pajSLTjEZDuJjdxX_1JncypYLDV66A-j1mVGzVK4';
-
-  function init() {
-    Tabletop.init( { key: publicSpreadsheetUrl,
-                     callback: showInfo,
-                     simpleSheet: true } )
-  }
-
-  function showInfo(data, tabletop) {
-    alert('Successfully processed!')
-    console.log(data);
   }
 
   window.addEventListener('DOMContentLoaded', init)
