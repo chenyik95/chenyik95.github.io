@@ -10,4 +10,11 @@ You can find the code and address of the SF store/ EF Locker via following links
 
 REFERENCE
 1) https://blog.usejournal.com/how-to-use-google-sheets-as-a-cms-or-a-database-f9d8e736fdce
-2) https://medium.com/@jaejohns/how-to-use-google-sheets-as-your-website-database-b0f2f13d0396 
+2) https://medium.com/@jaejohns/how-to-use-google-sheets-as-your-website-database-b0f2f13d0396
+
+	#<label class="label-input100" for="message">Message *</label>
+				#<div class="wrap-input100 validate-input">
+					#<textarea id="message" class="input100" name="message" placeholder="Please enter your comments..."></textarea>
+					#<span class="focus-input100"></span>
+				#</div>
+        
