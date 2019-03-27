@@ -221,6 +221,18 @@ iframe {
   padding-bottom: 11px;
 }
 
+.label-input50 {
+  font-family: Raleway-SemiBold;
+  font-size: 13px;
+  color: #555555;
+  line-height: 1.5;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+	
+  padding-bottom: 11px;
+}
+
 .input100 {
   display: block;
   width: 100%;
@@ -465,6 +477,9 @@ textarea.input100 {
   right: -28px;
 }
 
+.sf{
+	text-align: left;
+}
 /*---------------------------------------------*/
 @media (max-width: 576px) {
   .btn-hide-validate {
